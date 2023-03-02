@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:flutter_svg/flutter_svg.dart';
 
 void main() {
   runApp(const MyApp());
@@ -34,14 +35,10 @@ class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: const Color.fromRGBO(244, 243, 243, 1),
+      backgroundColor: const Color(0xFF1F0556),
       appBar: AppBar(
-        backgroundColor: const Color.fromRGBO(244, 243, 243, 1),
+        backgroundColor: const Color(0xFF1F0556),
         elevation: 0,
-        leading: const Icon(
-          Icons.menu,
-          color: Colors.black87,
-        ),
         systemOverlayStyle: SystemUiOverlayStyle.dark,
       ),
       body: SafeArea(
@@ -56,7 +53,7 @@ class _MyHomePageState extends State<MyHomePage> {
               Text(
                 "Desh Nidhi",
                 style: GoogleFonts.prompt(
-                  color: Colors.blueGrey,
+                  color: Colors.white,
                   fontSize: 30.0,
                   fontWeight: FontWeight.bold,
                 ),
@@ -65,28 +62,91 @@ class _MyHomePageState extends State<MyHomePage> {
               Text(
                 "Flutter Developer and Designer",
                 style: GoogleFonts.prompt(
-                  color: Colors.blueGrey,
+                  color: Colors.white,
                   fontSize: 20.0,
                   fontWeight: FontWeight.normal,
                 ),
               ),
+              const Divider(thickness:1,color: Colors.white,indent: 60,endIndent: 60,),
+              const SizedBox(height: 10),
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
-                children: const [
-                  Icon(Icons.facebook,size: 40.0,color: Colors.lightBlue,),
-                  SizedBox(width: 5),
-                  Icon(Icons.facebook,size: 40.0,color: Colors.lightBlue,),
-                  SizedBox(width: 5),
-                  Icon(Icons.facebook,size: 40.0,color: Colors.lightBlue,),
+                children: [
+                  SvgPicture.asset(
+                    "assets/icons/github.svg",
+                    width: 38.0,
+                    height: 38.0,
+                  ),
+                  const SizedBox(width: 10),
+                  SvgPicture.asset(
+                    "assets/icons/facebook.svg",
+                    width: 38.0,
+                    height: 38.0,
+                  ),
+                  const SizedBox(width: 10),
+                  SvgPicture.asset(
+                    "assets/icons/linkedIn.svg",
+                    width: 38.0,
+                    height: 38.0,
+                  ),
+                  const SizedBox(width: 10),
+                  SvgPicture.asset(
+                    "assets/icons/instagram.svg",
+                    width: 38.0,
+                    height: 38.0,
+                  ),
+                  const SizedBox(width: 10),
+                  SvgPicture.asset(
+                    "assets/icons/whatsapp.svg",
+                    width: 38.0,
+                    height: 38.0,
+                  ),
                 ],
               ),
               const SizedBox(height: 20),
               Container(
+                alignment: Alignment.center,
+                padding: const EdgeInsets.all(5.0),
                 height: 50,
-                width: 200,
+                width: 150,
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(25.0),
                   color: Colors.blue,
+                ),
+                child: Text(
+                  'Showcase',
+                  style:
+                      GoogleFonts.poppins(color: Colors.white, fontSize: 22.0),
+                ),
+              ),
+              const SizedBox(height: 20),
+              Container(
+                alignment: Alignment.center,
+                padding: const EdgeInsets.only(
+                    left: 0.0, top: 0.0, right: 0.0, bottom: 19.0),
+                height: 97,
+                width: 323,
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(8.0),
+                  color: Colors.blue,
+                ),
+                child: Container(
+                  height: 74,
+                  width: 323,
+                  decoration: const BoxDecoration(
+                      borderRadius: BorderRadius.only(
+                          bottomLeft: Radius.zero,
+                          bottomRight: Radius.zero,
+                          topLeft: Radius.circular(8.0),
+                          topRight: Radius.circular(8.0)),
+                      color: Colors.white),
+                  child: Text(
+                    'Showcase',
+                    style: GoogleFonts.poppins(
+                        color: Colors.white,
+                        fontSize: 14.0,
+                        fontWeight: FontWeight.bold),
+                  ),
                 ),
               ),
             ],
