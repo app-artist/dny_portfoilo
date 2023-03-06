@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:inspiration/branddesign.dart';
+import 'package:inspiration/mobileuidesign.dart';
+
 
 class Showcase extends StatefulWidget {
   const Showcase({Key? key}) : super(key: key);
@@ -54,12 +57,8 @@ class _ShowcaseState extends State<Showcase> {
         ),
         body: TabBarView(
           children: [
-            Image(
-              image: AssetImage('assets/images/image_1.png'),
-            ),
-            Image(
-              image: AssetImage('assets/images/image_2.png'),
-            )
+            BrandDesign(),
+            MobileUiDesign(),
           ],
         ),
       ),

@@ -21,95 +21,97 @@ class _MyHomePageState extends State<MyHomePage> {
         elevation: 0,
         systemOverlayStyle: SystemUiOverlayStyle.dark,
       ),
-      body: SafeArea(
-        child: Center(
-          child: Column(
-            children: [
-              const CircleAvatar(
-                radius: 120,
-                backgroundImage: AssetImage('assets/images/dny avtar.png'),
-                backgroundColor: Colors.white54,
-              ),
-              Text(
-                "Desh Nidhi Yadav",
-                style: GoogleFonts.prompt(
-                  color: Colors.white,
-                  fontSize: 30.0,
-                  fontWeight: FontWeight.bold,
+      body: SingleChildScrollView(
+        child: SafeArea(
+          child: Center(
+            child: Column(
+              children: [
+                const CircleAvatar(
+                  radius: 120,
+                  backgroundImage: AssetImage('assets/images/dny avtar.png'),
+                  backgroundColor: Colors.white54,
                 ),
-              ),
-              const SizedBox(height: 1),
-              Text(
-                "Flutter Developer and Designer",
-                style: GoogleFonts.prompt(
-                  color: Colors.white,
-                  fontSize: 20.0,
-                  fontWeight: FontWeight.normal,
+                Text(
+                  "Desh Nidhi Yadav",
+                  style: GoogleFonts.prompt(
+                    color: Colors.white,
+                    fontSize: 30.0,
+                    fontWeight: FontWeight.bold,
+                  ),
                 ),
-              ),
-              const Divider(
-                thickness: 0.25,
-                color: Colors.white60,
-                indent: 60,
-                endIndent: 60,
-              ),
-              const SizedBox(height: 20),
-              Row(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  SvgPicture.asset(
-                    "assets/icons/github.svg",
-                    width: 38.0,
-                    height: 38.0,
+                const SizedBox(height: 1),
+                Text(
+                  "Flutter Developer and Designer",
+                  style: GoogleFonts.prompt(
+                    color: Colors.white,
+                    fontSize: 20.0,
+                    fontWeight: FontWeight.normal,
                   ),
-                  const SizedBox(width: 15),
-                  SvgPicture.asset(
-                    "assets/icons/facebook.svg",
-                    width: 38.0,
-                    height: 38.0,
-                  ),
-                  const SizedBox(width: 15),
-                  SvgPicture.asset(
-                    "assets/icons/linkedIn.svg",
-                    width: 38.0,
-                    height: 38.0,
-                  ),
-                  const SizedBox(width: 15),
-                  SvgPicture.asset(
-                    "assets/icons/instagram.svg",
-                    width: 38.0,
-                    height: 38.0,
-                  ),
-                  const SizedBox(width: 15),
-                  SvgPicture.asset(
-                    "assets/icons/whatsapp.svg",
-                    width: 38.0,
-                    height: 38.0,
-                  ),
-                ],
-              ),
-              const SizedBox(height: 40),
-              Container(
-                alignment: Alignment.center,
-                padding: const EdgeInsets.all(2.0),
-                height: 50,
-                width: 150,
-                decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(25.0),
-                  color: Colors.blue,
                 ),
-                child: TextButton(
-                  onPressed: (){
-                    Navigator.push(context, MaterialPageRoute(builder: (context) => const Showcase(),),);
-                  },
-                  child: Text(
-                  'Showcase',
-                  style:
-                  GoogleFonts.poppins(color: Colors.white, fontSize: 22.0),
+                const Divider(
+                  thickness: 0.25,
+                  color: Colors.white60,
+                  indent: 60,
+                  endIndent: 60,
                 ),
+                const SizedBox(height: 20),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    SvgPicture.asset(
+                      "assets/icons/github.svg",
+                      width: 38.0,
+                      height: 38.0,
+                    ),
+                    const SizedBox(width: 15),
+                    SvgPicture.asset(
+                      "assets/icons/facebook.svg",
+                      width: 38.0,
+                      height: 38.0,
+                    ),
+                    const SizedBox(width: 15),
+                    SvgPicture.asset(
+                      "assets/icons/linkedIn.svg",
+                      width: 38.0,
+                      height: 38.0,
+                    ),
+                    const SizedBox(width: 15),
+                    SvgPicture.asset(
+                      "assets/icons/instagram.svg",
+                      width: 38.0,
+                      height: 38.0,
+                    ),
+                    const SizedBox(width: 15),
+                    SvgPicture.asset(
+                      "assets/icons/whatsapp.svg",
+                      width: 38.0,
+                      height: 38.0,
+                    ),
+                  ],
                 ),
-              ),
-            ],
+                const SizedBox(height: 40),
+                Container(
+                  alignment: Alignment.center,
+                  padding: const EdgeInsets.all(2.0),
+                  height: 50,
+                  width: 150,
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(25.0),
+                    color: Colors.blue,
+                  ),
+                  child: TextButton(
+                    onPressed: (){
+                      Navigator.push(context, MaterialPageRoute(builder: (context) => const Showcase(),),);
+                    },
+                    child: Text(
+                    'Showcase',
+                    style:
+                    GoogleFonts.poppins(color: Colors.white, fontSize: 22.0),
+                  ),
+                  ),
+                ),
+              ],
+            ),
           ),
         ),
       ),
