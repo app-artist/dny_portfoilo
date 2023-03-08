@@ -1,4 +1,3 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -29,32 +28,20 @@ class _BrandDesignState extends State<BrandDesign> {
               ),
             ),
             const SizedBox(height: 5),
-            Padding(
-              padding: const EdgeInsets.only(left: 10.0),
-              child: Row(
-                children: [
-                  Padding(
-                    padding: const EdgeInsets.all(12.0),
-                    child: Text(
-                      'Description of brand design 1',
-                      style: GoogleFonts.poppins(
-                        color: const Color(0xff0a1e3b),
-                        fontSize: 14.0,
-                        fontWeight: FontWeight.bold,
-                      ),
+            Row(
+              children: [
+                Padding(
+                  padding: const EdgeInsets.all(12.0),
+                  child: Text(
+                    'Description of brand design 1',
+                    style: GoogleFonts.poppins(
+                      color: const Color(0xff0a1e3b),
+                      fontSize: 14.0,
+                      fontWeight: FontWeight.bold,
                     ),
                   ),
-                  Row(
-                    children: const [
-                      Icon(CupertinoIcons.star),
-                      Icon(CupertinoIcons.star),
-                      Icon(CupertinoIcons.star),
-                      Icon(CupertinoIcons.star),
-                      Icon(CupertinoIcons.star),
-                    ],
-                  ),
-                ],
-              ),
+                ),
+              ],
             ),
             Container(
               padding: const EdgeInsets.only(top: 50.0),
@@ -68,32 +55,20 @@ class _BrandDesignState extends State<BrandDesign> {
               ),
             ),
             const SizedBox(height: 5),
-            Padding(
-              padding: const EdgeInsets.only(left: 10.0),
-              child: Row(
-                children: [
-                  Padding(
-                    padding: const EdgeInsets.all(12.0),
-                    child: Text(
-                      'Description of brand design 2',
-                      style: GoogleFonts.poppins(
-                        color: const Color(0xff0a1e3b),
-                        fontSize: 14.0,
-                        fontWeight: FontWeight.bold,
-                      ),
+            Row(
+              children: [
+                Padding(
+                  padding: const EdgeInsets.all(12.0),
+                  child: Text(
+                    'Description of brand design 2',
+                    style: GoogleFonts.poppins(
+                      color: const Color(0xff0a1e3b),
+                      fontSize: 14.0,
+                      fontWeight: FontWeight.bold,
                     ),
                   ),
-                  Row(
-                    children: const [
-                      Icon(CupertinoIcons.star),
-                      Icon(CupertinoIcons.star),
-                      Icon(CupertinoIcons.star),
-                      Icon(CupertinoIcons.star),
-                      Icon(CupertinoIcons.star),
-                    ],
-                  ),
-                ],
-              ),
+                ),
+              ],
             ),
           ],
         ),
