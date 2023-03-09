@@ -48,12 +48,6 @@ class _MyHomePageState extends State<MyHomePage> {
                     fontWeight: FontWeight.normal,
                   ),
                 ),
-                const Divider(
-                  thickness: 0.25,
-                  color: Colors.white60,
-                  indent: 60,
-                  endIndent: 60,
-                ),
                 const SizedBox(height: 20),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.center,
@@ -100,14 +94,19 @@ class _MyHomePageState extends State<MyHomePage> {
                     color: Colors.blue,
                   ),
                   child: TextButton(
-                    onPressed: (){
-                      Navigator.push(context, MaterialPageRoute(builder: (context) => const Showcase(),),);
+                    onPressed: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => const Showcase(),
+                        ),
+                      );
                     },
                     child: Text(
-                    'Showcase',
-                    style:
-                    GoogleFonts.poppins(color: Colors.white, fontSize: 22.0),
-                  ),
+                      'Showcase',
+                      style: GoogleFonts.poppins(
+                          color: Colors.white, fontSize: 22.0),
+                    ),
                   ),
                 ),
               ],
